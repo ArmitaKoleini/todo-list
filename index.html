@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>ToDo List</h1>
+    </header>
+    <section class="container">
+      <div class="form-container">
+        <form class="todo-form">
+          <input type="text" class="todo-input" />
+          <button class="add-todo" type="submit">
+            <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Add
+          </button>
+        </form>
+        <div class="select">
+          <select class="filter-todos" name="todos">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </div>
+      <div class="todo-container">
+        <ul class="todolist">
+          <!-- <li class="todo">
+          <p class="todo__title">todo #1</p>
+          <span class="todo__createdAt">1402/1/28</span>
+          <button><i class="todo__check far fa-check-square"></i></button>
+          <button><i class="todo__remove far fa-trash-alt"></i></button>
+        </li> -->
+        </ul>
+      </div>
+    </section>
+    <footer>
+      Made with
+      <svg
+        viewBox="0 0 1792 1792"
+        preserveAspectRatio="xMidYMid meet"
+        xmlns="http://www.w3.org/2000/svg"
+        style="height: 0.8rem"
+      >
+        <path
+          d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"
+          fill="#e25555"
+        ></path>
+      </svg>
+      by Armita Koleini
+    </footer>
+    <script src="./todolist.js"></script>
+  </body>
+</html>
